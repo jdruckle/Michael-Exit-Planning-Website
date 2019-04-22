@@ -472,7 +472,7 @@ section#contact {
   background-position: center;
 }
 
-section#contact .section-heading {
+section#contact .section-heading, section#contact .subheading {
   color: #fff;
 }
 
