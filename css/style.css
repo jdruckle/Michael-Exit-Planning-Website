@@ -12,11 +12,11 @@ a {
 }
 
 a:hover {
-  color: #2031EB;
+  color: #54818C;
 }
 
 .text-primary {
-  color: #2031EB !important;
+  color: #54818C !important;
 }
 
 h1,
@@ -65,13 +65,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #2031EB;
-  border-color: #2031EB;
+  background-color: #54818C;
+  border-color: #54818C;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #1623af !important;
-  border-color: #1623af !important;
+  background-color: #013759 !important;
+  border-color: #013759 !important;
   color: white;
 }
 
@@ -81,7 +81,7 @@ section h3.section-subheading {
 }
 
 ::selection {
-  background: #2031EB;
+  background: #54818C;
   text-shadow: none;
 }
 
@@ -165,7 +165,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/header-bg-2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -221,7 +221,6 @@ header.masthead .intro-text .intro-heading {
 
 #about {
   background: url('../img/about-bg.jpg') 50% 0 repeat-y fixed;
-  background-color: rgba(255,0,0,0.5);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -345,7 +344,7 @@ padding: 10px;}
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #2031EB;
+  background-color: #54818C;
 }
 
 .timeline > li .timeline-image h4 {
@@ -495,7 +494,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #2031EB;
+  border-color: #54818C;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -536,6 +535,11 @@ footer span.copyright {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+footer p {
+  font-size: 10px;
+  color: #000;
+}
+
 footer ul.quicklinks {
   font-size: 90%;
   line-height: 40px;
@@ -563,5 +567,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #2031EB;
+  background-color: #54818C;
 }
