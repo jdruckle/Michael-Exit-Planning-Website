@@ -221,6 +221,7 @@ header.masthead .intro-text .intro-heading {
 
 #about {
   background: url('../img/about-bg.jpg') 50% 0 repeat-y fixed;
+  background-color: rgba(255,0,0,0.5);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
