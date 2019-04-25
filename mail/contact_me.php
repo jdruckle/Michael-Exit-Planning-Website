@@ -9,18 +9,40 @@ if(empty($_POST['name'])      ||
    echo "No arguments Provided!";
    return false;
    }
-   
+
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
-   
+
+$htmlContent = '
+    <html>
+    <head>
+        <title>Thank you for contacting us!</title>
+    </head>
+    <body>
+        <h1>We will get back to you as soon as we can</h1>
+        <table cellspacing="0" style="border: 2px dashed #FB4314; width: 300px; height: 200px;">
+            <tr>
+                <th>Name:</th><td>WyoBT</td>
+            </tr>
+            <tr style="background-color: #15333F;">
+                <th>Email:</th><td> email</td>
+            </tr>
+            <tr>
+                <th>While you wait, please take this complementary Exit Map Survey to receive your free report:</th><td><a href="http://www.codexworld.com">Exit Map Link</a></td>
+            </tr>
+        </table>
+    </body>
+    </html>';
+
 // Create the email and send the message
-$to = 'yourname@yourdomain.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'jordanruckle@bluebisonweb.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website Contact Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";   
+$headers = "From: noreply@wyobt.com.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
-return true;         
+mail($email,"Thank you for reaching out to WyoBT",$htmlContent,$headers);
+return true;
 ?>
