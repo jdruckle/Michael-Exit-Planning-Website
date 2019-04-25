@@ -465,6 +465,11 @@ padding: 10px;}
   }
 }
 
+/* ctaBar */
+.ctaBar {
+  background-image: linear-gradient(#15333F, #54818C);
+}
+
 section#contact {
   background-color: #5d6974;
   background-image: url("../img/map-image.png");
