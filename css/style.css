@@ -219,6 +219,17 @@ header.masthead .intro-text .intro-heading {
   text-transform: none;
 }
 
+#services img {
+  border-radius: 50%;
+  height: 125px;
+}
+
+@media (max-width: 1000px) {
+  #services img {
+    margin-top: 50px;
+  }
+}
+
 #about {
   background: url('../img/about-bg.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
